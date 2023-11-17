@@ -1,4 +1,4 @@
-import keudet
+import keydet
 import keylength
 
 def main():
@@ -7,7 +7,7 @@ def main():
     ciphertext.write(cipher_string)
     ciphertext.close()
     key_length = keylength.determine_key_length(cipher_string)
-    plainstring = keudet.determine_key_dictionary(keylength,cipher_string)
+    plainstring = keydet.determine_key_dictionary(keylength,cipher_string)
 
     plaintext = open("plaintext.txt","w")
     plaintext.write(plainstring)
